@@ -8,24 +8,13 @@ $dark-grey-blue: #304268;
 // fonts
 
 @mixin header__title {
-  font-size: 24px;
+  font-size: 42px;
   font-weight: bold;
   line-height: 55px;
   text-transform: uppercase;
-  @media (min-width: 768px) {
-    font-size: 80px;
-    line-height: 106px;
-  }
-  @media (min-width: 1200px) {
-    font-size: 100px;
-    line-height: 132px;
-  }
 }
 @mixin header__subtitle {
   font-size: 16px;
-  @media (min-width: 768px) {
-    font-size: 24px;
-  }
 }
 @mixin main__title {
   font-size: 24px;
