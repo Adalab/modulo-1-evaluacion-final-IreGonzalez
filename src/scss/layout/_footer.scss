@@ -22,6 +22,7 @@
   }
   &__navigation {
     @include footer__navigation;
+    text-align: center;
     text-transform: uppercase;
     font-size: 16px;
     margin-top: 30px;
@@ -30,6 +31,11 @@
       text-align: left;
       margin-top: 45px;
       margin-bottom: 45px;
+    }
+    &--articles {
+      margin-top: 30px;
+    }
+    &--rrss {
     }
   }
   &__bottom {
