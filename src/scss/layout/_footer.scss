@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #304268;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+  }
+  &__navigation {
+    @include footer__navigation;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  &__copy {
+    @include footer__navigation;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  &__small {
+    @include footer__navigation;
+    font-size: 14px;
+    text-transform: lowercase;
+    margin-bottom: 45px;
+  }
+}
+.fas {
+  color: $bright-orange;
+}
