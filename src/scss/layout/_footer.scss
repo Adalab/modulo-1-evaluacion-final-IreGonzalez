@@ -6,51 +6,56 @@
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
   }
 
-  &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transform: translateY(50%);
-    margin: auto;
-    background-color: white;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-  }
   &__navigation {
-    @include footer__navigation;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 16px;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+
     @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+      max-width: 60%;
       order: 1;
-      text-align: left;
-      margin-top: 45px;
-      margin-bottom: 45px;
+      margin-right: 39px;
     }
-    &--articles {
+    @media (min-width: 1200px) {
+      margin-right: 370px;
+    }
+    &--list {
+      @include footer__navigation;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
       margin-top: 30px;
-    }
-    &--rrss {
+      @media (min-width: 768px) {
+        text-align: left;
+        margin-top: 45px;
+        margin-bottom: 45px;
+      }
     }
   }
   &__bottom {
+    display: flex;
+    flex-direction: column;
+    @include footer__navigation;
     text-align: center;
+
     @media (min-width: 768px) {
-      order: 0;
       text-align: left;
+      margin-left: 39px;
+    }
+    @media (min-width: 1200px) {
+      margin-left: 370px;
     }
     &--copy {
-      @include footer__navigation;
       font-size: 14px;
       margin-top: 30px;
     }
     &--small {
-      @include footer__navigation;
       font-size: 14px;
       text-transform: lowercase;
       margin-bottom: 45px;

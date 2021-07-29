@@ -71,7 +71,7 @@
 .main__reasons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 20%, 20%, 20%, 20%, 20%;
+  grid-template-rows: 16%, 20%, 20%, 20%, 16%, 8%;
   background-color: #eff9ff;
   text-align: center;
   width: 100%;
@@ -126,4 +126,17 @@
       margin-top: 60px;
     }
   }
+}
+.main__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: span 1;
+  grid-column: span 3;
+  position: relative;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
 }
