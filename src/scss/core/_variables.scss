@@ -1,35 +1,29 @@
 // colors
 
 $bright-orange: #f26002;
-$lightblue: #8ccbea;
 $cerulean: #0271bc;
 $dark-grey-blue: #304268;
 
 // fonts
 
 @mixin header__title {
+  font-family: "Roboto Slab", serif;
   font-size: 42px;
   font-weight: bold;
   line-height: 55px;
   text-transform: uppercase;
 }
 @mixin header__subtitle {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 @mixin main__title {
+  font-family: "Roboto Slab", serif;
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
   color: black;
   text-transform: capitalize;
-  @media (min-width: 768px) {
-    font-size: 26px;
-    line-height: 45px;
-  }
-  @media (min-width: 1200px) {
-    font-size: 32px;
-    line-height: 45px;
-  }
 }
 @mixin main__article {
   font-size: 18px;
@@ -38,6 +32,7 @@ $dark-grey-blue: #304268;
   line-height: 30px;
 }
 @mixin footer__navigation {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 30px;
   text-align: center;
