@@ -60,6 +60,11 @@
     height: 45px;
     border-radius: 45px;
     margin-bottom: 45px;
+    &:hover {
+      background-color: $bright-orange;
+      color: white;
+    }
+    transition: color ease-out 1s;
     @media (min-width: 768px) {
       width: 91px;
     }
@@ -121,7 +126,12 @@
     margin: auto;
     margin-top: 45px;
     margin-bottom: 60px;
-
+    &:hover {
+      color: $bright-orange;
+      border: solid 2px $bright-orange;
+      background-color: white;
+    }
+    transition: background ease-in-out 0.7s;
     @media (min-width: 768px) {
       margin-top: 60px;
     }
