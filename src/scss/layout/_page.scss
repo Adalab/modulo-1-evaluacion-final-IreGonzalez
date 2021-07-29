@@ -70,21 +70,32 @@
 }
 .main__reasons {
   display: grid;
-  border-color: solid black 1px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20%, 20%, 20%, 20%, 20%;
   background-color: #eff9ff;
-  width: 100%;
   text-align: center;
+  width: 100%;
 
   &--title {
     @include main__title;
+    grid-column: span 3;
+    grid-row: span 1;
     margin-top: 30px;
+
+    @media (min-width: 1200px) {
+      margin-top: 60px;
+    }
   }
 
   &--article {
     @include main__article;
     margin-left: 70px;
     margin-right: 70px;
+    grid-column: span 3;
+    @media (min-width: 768px) {
+      grid-column: span 1;
+    }
+
     &__title {
       font-family: "Roboto Slab", serif;
       font-weight: bold;
@@ -96,6 +107,7 @@
   }
 
   &--button {
+    grid-column: span 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,5 +121,9 @@
     margin: auto;
     margin-top: 45px;
     margin-bottom: 60px;
+
+    @media (min-width: 768px) {
+      margin-top: 60px;
+    }
   }
 }
