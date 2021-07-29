@@ -43,11 +43,14 @@ $bright-orange: #f26002;
     transform: translateY(5px);
   }
 }
-@keyframes giro {
+@keyframes scale {
   from {
-    transform: scale(0.75);
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
   }
   to {
-    transform: scale;
+    transform: scale(1.1);
   }
 }

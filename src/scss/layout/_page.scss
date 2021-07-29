@@ -150,4 +150,9 @@
   border-radius: 50%;
   width: 45px;
   height: 45px;
+  &:hover {
+    animation-name: scale;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+  }
 }
