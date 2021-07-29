@@ -1,0 +1,22 @@
+.header {
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 568px;
+}
+.header__navigation {
+  &--link {
+  }
+}
+.header__text {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  &--title {
+    @include header__title;
+  }
+  &--subtitle {
+    @include header__subtitle;
+  }
+  &--link {
+  }
+}
