@@ -59,6 +59,7 @@
     width: 76px;
     height: 45px;
     border-radius: 45px;
+    margin-bottom: 45px;
     @media (min-width: 768px) {
       width: 91px;
     }
@@ -69,27 +70,44 @@
 }
 .main__reasons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  border-color: solid black 1px;
+  grid-template-columns: 1fr;
   background-color: #eff9ff;
   width: 100%;
+  text-align: center;
+
   &--title {
-    grid-row: span 3;
     @include main__title;
+    margin-top: 30px;
   }
+
   &--article {
-    grid-row: span 1;
     @include main__article;
+    margin-left: 70px;
+    margin-right: 70px;
     &__title {
       font-family: "Roboto Slab", serif;
       font-weight: bold;
+      margin-top: 45px;
     }
     &__text {
       font-family: "Roboto", sans-serif;
     }
   }
+
   &--button {
-    grid-row: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bright-orange;
+    width: 184px;
+    height: 45px;
+    border-radius: 45px;
     font-family: "Roboto", sans-serif;
     font-weight: medium;
+    color: white;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 60px;
   }
 }
