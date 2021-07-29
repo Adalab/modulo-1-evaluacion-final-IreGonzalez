@@ -34,3 +34,20 @@ $bright-orange: #f26002;
   line-height: 30px;
   color: white;
 }
+//Animatons//
+@keyframes translate {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+@keyframes giro {
+  from {
+    transform: scale(0.75);
+  }
+  to {
+    transform: scale;
+  }
+}
