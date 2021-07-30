@@ -11,10 +11,12 @@ $bright-orange: #f26002;
   line-height: 55px;
   text-transform: uppercase;
 }
+
 @mixin header__subtitle {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+
 @mixin main__title {
   font-family: "Roboto Slab", serif;
   font-size: 24px;
@@ -23,12 +25,14 @@ $bright-orange: #f26002;
   color: black;
   text-transform: capitalize;
 }
+
 @mixin main__article {
   font-size: 18px;
   line-height: 30px;
   text-align: center;
   line-height: 30px;
 }
+
 @mixin footer__navigation {
   font-family: "Roboto", sans-serif;
   line-height: 30px;

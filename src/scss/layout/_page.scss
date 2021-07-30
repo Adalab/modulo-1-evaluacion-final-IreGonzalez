@@ -11,45 +11,55 @@
   text-align: left;
   margin-left: 15px;
   margin-right: 15px;
+
   @media (min-width: 768px) {
     margin-left: 39px;
   }
+
   @media (min-width: 1200px) {
     margin-left: 275px;
     margin-right: 275px;
   }
+
   &--tips {
     font-size: 14px;
     color: #8ccbea;
     line-height: 30px;
     margin-top: 30px;
+
     @media (min-width: 1200px) {
       margin-top: 60px;
     }
   }
+
   &--title {
     @include main__title;
     margin-bottom: 15px;
+
     @media (min-width: 768px) {
       font-size: 26px;
       line-height: 45px;
       margin-bottom: 30px;
     }
+
     @media (min-width: 1200px) {
       font-size: 32px;
       line-height: 45px;
     }
   }
+
   &--text {
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #4a4a4a;
     margin-bottom: 30px;
+
     @media (min-width: 768px) {
       font-size: 20px;
     }
   }
+
   &--button {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
@@ -61,14 +71,17 @@
     height: 45px;
     border-radius: 45px;
     margin-bottom: 45px;
+
     &:hover {
       background-color: $bright-orange;
       color: white;
     }
     transition: color ease-out 1s;
+
     @media (min-width: 768px) {
       width: 91px;
     }
+
     @media (min-width: 1200px) {
       width: 160px;
     }
@@ -96,6 +109,7 @@
     margin-left: 70px;
     margin-right: 70px;
     grid-column: span 3;
+
     @media (min-width: 768px) {
       grid-column: span 1;
     }
@@ -105,6 +119,7 @@
       font-weight: bold;
       margin-top: 45px;
     }
+
     &__text {
       font-family: "Roboto", sans-serif;
     }
@@ -125,17 +140,20 @@
     margin: auto;
     margin-top: 45px;
     margin-bottom: 60px;
+
     &:hover {
       color: $bright-orange;
       border: solid 2px $bright-orange;
       background-color: white;
     }
     transition: background ease-in-out 0.7s;
+
     @media (min-width: 768px) {
       margin-top: 60px;
     }
   }
 }
+
 .main__link {
   display: flex;
   justify-content: center;
@@ -148,6 +166,7 @@
   border-radius: 50%;
   width: 45px;
   height: 45px;
+
   &:hover {
     animation-name: scale;
     animation-duration: 3s;

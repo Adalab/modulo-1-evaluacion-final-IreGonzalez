@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
 }
+
 .header__navigation {
   &--link {
     position: fixed;
@@ -18,9 +19,9 @@
     background-color: #0271bc;
     height: 44px;
     width: 44px;
-    /*img 16px *14px*/
   }
 }
+
 .header__text {
   display: flex;
   flex-direction: column;
@@ -32,25 +33,30 @@
     @include header__title;
     width: 12ch;
     text-align: center;
+
     @media (min-width: 768px) {
       font-size: 80px;
       line-height: 106px;
       margin-bottom: 20px;
     }
+
     @media (min-width: 1200px) {
       font-size: 100px;
       line-height: 132px;
       margin-bottom: 0px;
     }
   }
+
   &--subtitle {
     @include header__subtitle;
     margin-bottom: 45px;
+
     @media (min-width: 768px) {
       font-size: 24px;
       margin-bottom: 30px;
     }
   }
+
   &--link {
     display: flex;
     justify-content: center;
@@ -60,11 +66,13 @@
     width: 45px;
     border-radius: 50%;
     margin-bottom: 53px;
+
     &:hover {
       animation-name: translate;
       animation-duration: 2s;
       animation-iteration-count: 1;
     }
+
     @media (min-width: 768px) {
       margin-bottom: 13px;
     }

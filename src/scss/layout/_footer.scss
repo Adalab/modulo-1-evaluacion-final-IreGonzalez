@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #304268;
+
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-around;
@@ -13,7 +14,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 30px;
+    margin-top: 60px;
 
     @media (min-width: 768px) {
       flex-direction: row;
@@ -22,15 +23,18 @@
       order: 1;
       margin-right: 39px;
     }
+
     @media (min-width: 1200px) {
       margin-right: 370px;
     }
+
     &--list {
       @include footer__navigation;
       text-align: center;
       text-transform: uppercase;
       font-size: 16px;
       margin-top: 30px;
+
       @media (min-width: 768px) {
         text-align: left;
         margin-top: 45px;
@@ -48,14 +52,17 @@
       text-align: left;
       margin-left: 39px;
     }
+
     @media (min-width: 1200px) {
       min-width: 117px;
       margin-left: 370px;
     }
+
     &--copy {
       font-size: 14px;
       margin-top: 30px;
     }
+
     &--small {
       font-size: 14px;
       text-transform: lowercase;
@@ -63,6 +70,7 @@
     }
   }
 }
+
 .fas {
   color: $bright-orange;
 }
