@@ -8,12 +8,12 @@
 }
 @keyframes scale {
   from {
-    transform: scale(0);
+    transform: translateY(50%) scale(0.2);
   }
   50% {
-    transform: scale(1.5);
+    transform: translateY(50%) scale(1.5);
   }
   to {
-    transform: scale(1.1);
+    transform: translateY(50%) scale(1.1);
   }
 }
