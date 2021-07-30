@@ -1,5 +1,10 @@
 # Created by https://www.gitignore.io/api/sass,node,bower,macos
 
+# Enunciado y tareas
+
+.enunciado
+.evaluacion-modulo-1-especificaciones.odt
+
 # Bower
 bower_components
 .bower-cache
