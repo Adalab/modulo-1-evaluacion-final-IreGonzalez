@@ -68,9 +68,11 @@
     margin-bottom: 53px;
 
     &:hover {
-      animation-name: translate;
-      animation-duration: 2s;
-      animation-iteration-count: 1;
+      @media (min-width: 1200px) {
+        animation-name: translate;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+      }
     }
 
     @media (min-width: 768px) {
