@@ -58,9 +58,7 @@
   }
 
   &--link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
     background-color: white;
     height: 45px;
     width: 45px;
@@ -76,6 +74,9 @@
     }
 
     @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 13px;
     }
   }
