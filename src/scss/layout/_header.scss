@@ -1,7 +1,7 @@
 .header {
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-attachment: scroll;
   height: 100vh;
   display: flex;
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0271bc;
+    background-color: $dark-grey;
     height: 44px;
     width: 44px;
   }

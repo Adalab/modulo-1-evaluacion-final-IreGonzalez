@@ -23,7 +23,7 @@
 
   &--tips {
     font-size: 14px;
-    color: #8ccbea;
+    color: $light-purple;
     line-height: 30px;
     margin-top: 30px;
 
@@ -60,13 +60,13 @@
     }
   }
 
-  &--button {
+  &--button{
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     text-align: center;
     line-height: 45px;
-    color: $bright-orange;
-    border: solid 2px $bright-orange;
+    color: $dark-grey;
+    border: solid 2px $dark-grey;
     width: 76px;
     height: 45px;
     border-radius: 45px;
@@ -74,7 +74,7 @@
 
     &:hover {
       @media (min-width: 1200px) {
-        background-color: $bright-orange;
+        background-color: $dark-grey;
         color: white;
         transition: color ease-out 1s;
       }
@@ -92,7 +92,7 @@
 .main__reasons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #eff9ff;
+  background-color: $light-grey;
   text-align: center;
   width: 100%;
 
@@ -127,12 +127,12 @@
     }
   }
 
-  &--button {
+  &--button{
     grid-column: span 3;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $bright-orange;
+    background-color: $dark-grey;
     width: 184px;
     height: 45px;
     border-radius: 45px;
@@ -149,8 +149,8 @@
 
     &:hover {
       @media (min-width: 1200px) {
-        color: $bright-orange;
-        border: solid 2px $bright-orange;
+        color: $dark-grey;
+        border: solid 2px $dark-grey;
         background-color: white;
         transition: background ease-in-out 0.7s;
         width: 180px;
@@ -168,10 +168,15 @@
   margin: auto;
   grid-column: 2/3;
   transform: translateY(50%);
-  background-color: white;
+  background-color: $medium-grey;
   border-radius: 50%;
   width: 45px;
   height: 45px;
+
+  &--arrow{
+    width: 35px;
+    height: 35px;
+  }
 
   &:hover {
     @media (min-width: 1200px) {
