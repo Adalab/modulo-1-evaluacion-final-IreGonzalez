@@ -1,7 +1,5 @@
 <main class="main">
-    <section>
-      <article>
-        <h1>Contacto</h1>
+    <section class="form__instructions">
         <p>
           Si tienes cualquier consulta y prefieres un contacto directo a mi e-mail puedes rellenar el siguiente formulario
         </p>
@@ -9,44 +7,46 @@
           Todos los campos con <span class="asterisk">*</span> son
           obligatorios.
         </p>
-      </article>
     </section>
-    <section id="form">
-      <form
+    <section id="form" class="form__section">
+      <form 
+        class="form__short"
         action="https://formspree.io/f/xayaggje"
         method="POST"
       >
-        <label class="label" for="Name"
-          >Nombre completo <span class="asterisk">*</span>
-          <input
-            class="form"
-            placeholder="Escribe tu nombre..."
-            type="text"
-            id="Name"
-            name="Name"
-          />
-        </label>
-        <label for="emailAddress"
-          >E-mail <span class="asterisk">*</span>
-          <input
-            class="form"
-            placeholder="Escribe tu E-mail..."
-            type="email"
-            id="emailAddress"
-            name="emailAddress"
-        /></label>
-        <label for="phone"
-          >Teléfono
-          <input
-            class="form"
-            placeholder="Ej:123456789"
-            type="tel"
-            id="phone"
-            name="phone"
-        /></label>
-        <label for="comments"
+          <label class="form__label" for="Name"
+            >Nombre completo <span class="asterisk">*</span>
+            <input
+              class="form__input"
+              placeholder="Escribe tu nombre..."
+              type="text"
+              id="Name"
+              name="Name"
+            />
+          </label>
+          <label class="form__label" for="emailAddress"
+            >E-mail <span class="asterisk">*</span>
+            <input
+              class="form__input"
+              placeholder="Escribe tu E-mail..."
+              type="email"
+              id="emailAddress"
+              name="emailAddress"
+          /></label>
+          <label class="form__label"
+          for="phone"
+            >Teléfono
+            <input
+              class="form__input"
+              placeholder="Ej:123456789"
+              type="tel"
+              id="phone"
+              name="phone"
+          /></label>
+        <label class="form__label" for="comments"
           >Mensaje <span class="asterisk">*</span>
           <input
+            class="form__fill"
             placeholder="Escribe aquí tu consulta o comentario"
             type="text"
             id="comments"
@@ -54,7 +54,7 @@
             size="15"
             maxlength="100"
         /></label>
-        <input class="input" type="submit" value="Enviar" />
+        <input class="form__button" type="submit" value="Enviar" />
       </form>
     </section>
     <a class="main__link" href="./contact.html" title="Up"

@@ -213,3 +213,43 @@ margin-left: 10px;
     text-align: right;
   }
 }
+
+.form{
+  display: flex;
+  flex-direction: column;
+  &__instructions{
+    @include main__text;
+  }
+  &__section{
+    display: flex;
+    flex-direction: column;
+  }
+  &__short{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+  }
+  &__label{
+    @include main__article;
+    font-family: 'Lato', sans-serif;
+  }
+  &__input{
+    background-color: $light-grey;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  &__fill{
+    width: 250px;
+    height: 150px;
+    background-color: $light-grey;
+    border-radius: 5px;
+    ::placeholder{
+    }
+  }
+  &__button{
+    padding: 10px;
+    background-color: $light-grey;
+    @include main__article;
+    font-family: 'Lato', sans-serif;
+  }
+}
