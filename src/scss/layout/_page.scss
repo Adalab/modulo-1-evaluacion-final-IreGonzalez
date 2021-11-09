@@ -90,6 +90,7 @@
     }
   }
 }
+
 .main__reasons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -184,6 +185,24 @@
       animation-name: scale;
       animation-duration: 3s;
       animation-iteration-count: 1;
+    }
+  }
+}
+
+.main__projects{
+  &--article{
+    &__title{
+
+    }
+    &__text{
+
+    }
+    &__img{
+      width: 150px;
+      height: 150px;
+    }
+    &__link{
+      width: 15px;
     }
   }
 }
