@@ -19,22 +19,34 @@
   <body>
     <header class="header">
       <nav class="header__navigation">
-        <a
-          class="header__navigation--link"
-          href="https://adalab.es/"
-          target="-blank"
-          title="Adalab"
-        >
-          <img src="./assets/images/ico-menu.svg" alt="menu"
-        /></a>
+        <img 
+        class="header__navigation--link js_nav" 
+        src="./assets/images/ico-menu.svg"
+        alt="menu"
+        />
+        <div class="hidden header__navigation--list js_navList">
+          <img 
+        class="header__navigation--link js_navClose" 
+        src="./assets/images/remove-button.png"
+        alt="close"
+        />
+        <ul class="header__navigation--elements">
+          <li class="header__navigation--elem"><a href="./index.html">Página principal</a></li>
+          <li class="header__navigation--elem"><a href="./bio.html">Biografía</a></li>
+          <li class="header__navigation--elem"><a href="./projects.html">Proyectos</a></li>
+          <li class="header__navigation--elem"><a href="./contact.html">Contacto</a></li>
+          <li class="header__navigation--elem"><a href="https://www.linkedin.com/in/iregonzalez/" title="Linkedin" target="-blank">Linkedin</a></li>
+          <li class="header__navigation--elem"><a href="https://github.com/IreGonzalez" title="GitHub" target="-blank">Github</a></li>
+        </ul>
+        </div>
       </nav>
       <div class="header__text">
         <h1 class="header__text--title">Irene González</h1>
-        <h2 class="header__text--subtitle">Front-end developer</h2>
+        <h2 class="header__text--subtitle">Front-end Developer</h2>
         <a
           class="header__text--link"
           href="./index.html#reasons"
-          title="3 Datos Curiosos"
+          title=""
         >
           <img class="header__text--link__arrow" src="./assets/images/chevron-arrow-down.svg" alt="scroll" />
         </a>
@@ -42,44 +54,43 @@
     </header>
 
     <main class="main">
-      <section class="main__tips">
-        <h2 class="main__tips--tips">Pequeño relato</h2>
-        <h3 class="main__tips--title">Asómate al gérmen de esta programadora</h3>
+        <section class="main__tips">
+            <h2 class="main__tips--tips">Pequeño relato</h2>
+            <h3 class="main__tips--title">Asómate al gérmen de esta programadora</h3>
             <p class="main__tips--text">
-          En mi casa siempre hubo ordenador y como en casi todos sitios había que turnarse como buenos hermanos, para poder jugar me las tenía que ver con Ms2, en casa de mi abuelo jugábamos al Arkanoid en una pantalla de 16 colores gracias al disco de 5 1/4, todo un lujazo.
-        </p>
-        <p class="main__tips--text">
-          Durante la carrera fui capaz a sobrevivir a Windows Vista gracias a Ubuntu y empecé a adentrarme en el mundo del software libre de forma totalmente autodidacta, incluso me atreví a instalarme un emulador de windows...wine...con el que me peleé hasta aburrirme solo para intentar jugar.
-        </p>
-        <p class="main__tips--text">
-          El día que me hablaron de Adalab y me pusieron sobre la mesa aquello de la programación front-end, lo tuve claro, mi próximo destino es este sin lugar a dudas.
-        </p>
-        <button class="main__tips--button hidden">Go</button>
-      </section>
-      <section id="reasons" class="main__reasons">
-        <h3 class="main__reasons--title">3 Datos curiosos</h3>
-        <article class="main__reasons--article">
-          <h4 class="main__reasons--article__title">Ávida lectora</h4>
-          <p class="main__reasons--article__text">Coger un libro con tiempo para terminármelo es un vicio, me encanta la novela fantástica, aunque no rechazo un buen libro de novela negra</p>
-        </article>
+                Durante varias semanas he estado inmersa en el mundo de la programación gracias a Adalab, consiguiendo realizar proyectos individuales y en grupo, aplicando la filosofía Agile para gestionar el cambio constante en el que me encontraba sumergida junto a mis compañeras.
+            </p>
+            <p class="main__tips--text">
+                Soy una persona curiosa, con inquietud por aprender constantemente y crecer, así que estoy deseando tener mi oportunidad y seguir creciendo.
+            </p>
+            <p class="main__tips--text">
+                Me encanta la combinación del trabajo en equipo y el individual, poniendo en valor las cualidades de cada miembro por el bien del conjunto.
+            </p>
+            <a class="main__tips--button" href="./bio.html" title="Go to Bio">Go</a>
+          </section>
+          <section id="reasons" class="main__reasons">
+            <h3 class="main__reasons--title">Algunos proyectos</h3>
+            <article class="main__reasons--article">
+              <h4 class="main__reasons--article__title">Buscador de personajes</h4>
+              <p class="main__reasons--article__text">Se trata de la realización de un buscador de personajes de la serie de animación Rick and Morty</p>
+            </article>
 
-        <article class="main__reasons--article">
-          <h4 class="main__reasons--article__title">Crochetera</h4>
-          <p class="main__reasons--article__text">Siempre quiero una vueltecita más y lo dejo...no suele ser solo una y siempre hay proyectos en mente y en lista de espera</p>
-        </article>
+            <article class="main__reasons--article">
+              <h4 class="main__reasons--article__title">Buscador de series</h4>
+              <p class="main__reasons--article__text">Web en la que almacenar un listado de tus series favoritas</p>
+            </article>
 
-        <article class="main__reasons--article">
-          <h4 class="main__reasons--article__title">Ordenada</h4>
-          <p class="main__reasons--article__text">Economizo mi tiempo, así que intento ser consciente de lo que hago para ahorrame el revisar</p>
-        </article>
+            <article class="main__reasons--article">
+              <h4 class="main__reasons--article__title">Mis Clubs</h4>
+              <p class="main__reasons--article__text">Web con la que organizar y filtrar tus clubs favoritos, este proyecto está pendiente de mejoras</p>
+            </article>
 
-        <a class="main__reasons--button" href="../projects.html" title="Proyectos" target="_blank">Proyectos</a>
-        <a class="main__link" href="./index.html" title="Up"
-          ><img class="main__link--arrow" src="./assets/images/arrow-up.svg" alt="arrow"
-        /></a>
-      </section>
+            <a class="main__reasons--button" href="./projects.html" title="Proyectos">Proyectos</a>
+            <a class="main__link" href="./index.html" title="Up"
+              ><img class="main__link--arrow" src="./assets/images/arrow-up.svg" alt="arrow"
+            /></a>
+          </section>
     </main>
-
     <footer class="footer">
       <nav class="footer__navigation">
         <ul class="footer__navigation--list">
@@ -120,5 +131,6 @@
       </div>
     </footer>
 
+    <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>

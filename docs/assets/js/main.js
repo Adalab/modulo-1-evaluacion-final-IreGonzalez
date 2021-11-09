@@ -1,0 +1,1 @@
+"use strict";const nav=document.querySelector(".js_nav"),navList=document.querySelector(".js_navList"),navClose=document.querySelector(".js_navClose");function handleMenu(){navList.classList.toggle("hidden"),nav.classList.toggle("hidden")}nav.addEventListener("click",handleMenu),navClose.addEventListener("click",handleMenu);

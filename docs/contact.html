@@ -44,48 +44,77 @@
     </nav>
     <div class="header__text">
       <h1 class="header__text--title">Irene González</h1>
-      <h2 class="header__text--subtitle">Proyectos</h2>
+      <h2 class="header__text--subtitle">Contacto</h2>
       <a
-        class=""
-        href=""
-        title="proyectos"
+        class="header__text--link"
+        href="./contact.html#form"
+        title="Formulario"
       >
-        <img class="" src="./assets/images/chevron-arrow-down.svg" alt="scroll" />
+        <img class="header__text--link__arrow" src="./assets/images/chevron-arrow-down.svg" alt="scroll" />
       </a>
     </div>
   </header>
 
     <main class="main">
-        <article class="main__projects--article">
-            <h4 class="main__projects--article__title">Buscador de series</h4>
-            <p class="main__projects--article__text">Web en la que almacenar un listado de tus series favoritas</p>
-            <img class="main__projects--article__img"src="" alt="Web Series">
-            <a href="https://iregonzalez.github.io/modulo-2-evaluacion-final-IreGonzalez/"><img class="main__projects--article__link"src="./assets/images/link-symbol.png" alt="link"></a>
-            <a href="https://github.com/IreGonzalez/modulo-2-evaluacion-final-IreGonzalez"><img class="main__projects--article__link"src="./assets/images/code.png" alt=""></a>
+        <section>
+          <article>
+            <h1>Contacto</h1>
+            <p>
+              Si tienes cualquier consulta y prefieres un contacto directo a mi e-mail puedes rellenar el siguiente formulario
+            </p>
+            <p>
+              Todos los campos con <span class="asterisk">*</span> son
+              obligatorios.
+            </p>
           </article>
-        <article class="main__projects--article">
-            <h4 class="main__projects--article__title">Buscador de Personajes</h4>
-            <p class="main__projects--article__text">Se trata de la realización de un buscador de personajes de la serie de animación Rick and Morty</p>
-            <img class="main__projects--article__img"src="" alt="Web Rick & Morty">
-            <a href="https://iregonzalez.github.io/modulo-3-evaluacion-final-IreGonzalez/#/"><img class="main__projects--article__link"src="./assets/images/link-symbol.png" alt="link"></a>
-            <a href="https://github.com/IreGonzalez/modulo-3-evaluacion-final-IreGonzalez"><img class="main__projects--article__link"src="./assets/images/code.png" alt=""></a>
-          </article>
-        <article class="main__projects--article">
-            <h4 class="main__projects--article__title">Mis clubs</h4>
-            <p class="main__projects--article__text">Web con la que organizar y filtrar tus clubs favoritos, este proyecto está pendiente de mejoras</p>
-            <img class="main__projects--article__img"src="" alt="Mis clubs">
-            <a href="https://iregonzalez.github.io/modulo-3-evaluacion-intermedia-IreGonzalez/"><img class="main__projects--article__link"src="./assets/images/link-symbol.png" alt="link"></a>
-            <a href="https://github.com/IreGonzalez/modulo-3-evaluacion-intermedia-IreGonzalez"><img class="main__projects--article__link"src="./assets/images/code.png" alt=""></a>
-          </article>
-        <article class="main__projects--article">
-            <h4 class="main__projects--article__title">Adivina el número</h4>
-            <p class="main__projects--article__text">Realizar un juego en el que se genere un número aleatorio y según el input del usuario genere una u otra respuesta</p>
-            <img class="main__projects--article__img"src="" alt="Adivina el número">
-            <a href="https://iregonzalez.github.io/modulo-2-evaluacion-intermedia-IreGonzalez/"><img class="main__projects--article__link"src="./assets/images/link-symbol.png" alt="link"></a>
-            <a href="https://github.com/IreGonzalez/modulo-2-evaluacion-intermedia-IreGonzalez"><img class="main__projects--article__link"src="./assets/images/code.png" alt=""></a>
-          </article>
-        
-    </main>
+        </section>
+        <section id="form">
+          <form
+            action="https://formspree.io/f/xayaggje"
+            method="POST"
+          >
+            <label class="label" for="Name"
+              >Nombre completo <span class="asterisk">*</span>
+              <input
+                class="form"
+                placeholder="Escribe tu nombre..."
+                type="text"
+                id="Name"
+                name="Name"
+              />
+            </label>
+            <label for="emailAddress"
+              >E-mail <span class="asterisk">*</span>
+              <input
+                class="form"
+                placeholder="Escribe tu E-mail..."
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+            /></label>
+            <label for="phone"
+              >Teléfono
+              <input
+                class="form"
+                placeholder="Ej:123456789"
+                type="tel"
+                id="phone"
+                name="phone"
+            /></label>
+            <label for="comments"
+              >Mensaje <span class="asterisk">*</span>
+              <input
+                placeholder="Escribe aquí tu consulta o comentario"
+                type="text"
+                id="comments"
+                name="comments"
+                size="15"
+                maxlength="100"
+            /></label>
+            <input class="input" type="submit" value="Enviar" />
+          </form>
+        </section>
+      </main>
     <footer class="footer">
       <nav class="footer__navigation">
         <ul class="footer__navigation--list">
