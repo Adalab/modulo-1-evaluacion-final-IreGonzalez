@@ -25,6 +25,7 @@
           <input
             class="form__input"
             placeholder="Escribe tu E-mail..."
+            required
             type="email"
             id="emailAddress"
             name="emailAddress"
@@ -37,6 +38,8 @@
           <input
             class="form__input"
             placeholder="Ej:123456789"
+            minlength="9"
+            maxlength="13"
             type="tel"
             id="phone"
             name="phone"
@@ -48,6 +51,7 @@
         <input
           class="form__text"
           placeholder="Escribe tu consulta"
+          required
           type="text"
           id="comments"
           name="comments"

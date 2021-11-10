@@ -1,10 +1,15 @@
 .form{
+  @media (min-width: 780px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
     &__instructions{
-      grid-column: 2/4;
-      margin-top: 40px;
       @include main__text;
+      margin: 35px;
+      @media (min-width: 780px) {
+      grid-column: 2/4;
+      margin-top: 80px;
+      }
     }
     &__section{
       grid-column: 2/4;
@@ -29,10 +34,10 @@
       }
     &__text{
       grid-column: span 3;
+      flex-flow: wrap;
       height: 150px;
       background-color: $light-grey;
       border-radius: 5px;
-      
       padding-left: 10px;
     }
     &__button{
