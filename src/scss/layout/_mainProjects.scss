@@ -1,0 +1,29 @@
+.main__projects{
+    &--article{
+      display: flex;
+      &__title{
+        @include main__title;
+        
+      }
+      &__text{
+        @include main__text;
+      }
+      &__img{
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+      }
+      &__link{
+        width: 18px;
+        padding: 5px;
+      }
+    }
+  }
+  .projects{
+    &__text{
+  margin-left: 10px;
+    }
+    &__links{
+      text-align: right;
+    }
+  }
