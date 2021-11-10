@@ -51,6 +51,20 @@ $dark-grey: #4e4e4e;
   line-height: 30px;
 }
 
+@mixin main__link{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  transform: translateY(50%);
+  background-color: $medium-grey;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
 @mixin footer__navigation {
   font-family: 'Lato', sans-serif;
   font-weight: 300;

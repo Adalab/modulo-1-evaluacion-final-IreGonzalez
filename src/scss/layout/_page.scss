@@ -158,17 +158,8 @@
 }
 
 .main__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin: auto;
+  @include main__link;
   grid-column: 2/3;
-  transform: translateY(50%);
-  background-color: $medium-grey;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
 
   &--arrow{
     width: 35px;
@@ -215,40 +206,47 @@ margin-left: 10px;
 }
 
 .form{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   &__instructions{
+    grid-column: 2/4;
+    margin-top: 40px;
     @include main__text;
   }
   &__section{
-    display: flex;
-    flex-direction: column;
-  }
-  &__short{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5px;
+    background-color: $light-purple;
+    border-radius: 5px;
+    padding: 20px;
   }
   &__label{
+    grid-column: span 1;
     @include main__article;
+    text-align: initial;
     font-family: 'Lato', sans-serif;
   }
   &__input{
+    grid-column: span 3;
     background-color: $light-grey;
     border-radius: 5px;
-    margin-bottom: 5px;
-  }
-  &__fill{
-    width: 250px;
+    padding-left: 10px;
+    }
+  &__text{
+    grid-column: span 3;
     height: 150px;
     background-color: $light-grey;
     border-radius: 5px;
-    ::placeholder{
-    }
+    
+    padding-left: 10px;
   }
   &__button{
+    grid-column: 1/2;
     padding: 10px;
     background-color: $light-grey;
+    border-radius: 5px;
     @include main__article;
     font-family: 'Lato', sans-serif;
   }
