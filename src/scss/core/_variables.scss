@@ -1,9 +1,14 @@
 // colors
 $light-purple:rgba(79,110,197,0.1);
+$light-purple-2:rgba(79,110,197,0.3);
 $purple: rgb(79,110,197);
 $light-grey:rgba(168,168,168,0.3);
 $medium-grey: rgb(168,168,168);
 $dark-grey: #4e4e4e;
+
+.hidden{
+  display: none;
+}
 
 // fonts
 
@@ -53,6 +58,3 @@ $dark-grey: #4e4e4e;
   color: white;
 }
 
-.hidden{
-  display: none;
-}

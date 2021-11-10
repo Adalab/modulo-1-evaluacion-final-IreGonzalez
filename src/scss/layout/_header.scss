@@ -1,5 +1,5 @@
 .header {
-  background-image: url(../images/cover.jpg);
+  background-image: url(../images/cover-d.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $dark-grey;
+    background-color: $medium-grey;
     height: 44px;
     width: 44px;
   }
@@ -24,6 +24,7 @@
     position: fixed;
     top: 0px;
     left: 0px;
+    background-color: $medium-grey;
   }
   &--elements{
     margin-top: 50px;
