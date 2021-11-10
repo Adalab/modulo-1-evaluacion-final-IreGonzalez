@@ -47,73 +47,94 @@
       <h1 class="header__text--title">Irene González</h1>
       <h2 class="header__text--subtitle">Proyectos</h2>
       <a
-        class=""
-        href=""
-        title="proyectos"
+        class="header__text--link"
+        href="./projects.html#list"
+        title=""
       >
-        <img class="" src="./assets/images/chevron-arrow-down.svg" alt="scroll" />
+        <img class="header__text--link__arrow" src="./assets/images/chevron-arrow-down.svg" alt="scroll" />
       </a>
     </div>
   </header>
 
-    <main class="main">
-        <ul>
-            <li>
-                <article class="main__projects--article">
-                    <img class="main__projects--article__img"src="./assets/images/project-series.jpg" alt="Web Series">
-                    <div class="projects__text">
-                      <h4 class="main__projects--article__title">Buscador de series</h4>
-                      <p class="main__projects--article__text">Web en la que almacenar un listado de tus series favoritas</p>
-                      <div class="projects__links">
-                        <a href="https://iregonzalez.github.io/modulo-2-evaluacion-final-IreGonzalez/" title="Web"><img class="main__projects--article__link"src="./assets/images/link-symbol.png" alt="link"></a>
-                        <a href="https://github.com/IreGonzalez/modulo-2-evaluacion-final-IreGonzalez" title="Código"><img class="main__projects--article__link"src="./assets/images/code.png" alt=""></a>
+    <main class="main__projects">
+        <section class="main__projects--descript">
+            <h2 class="main__tips--tips">Descripción</h2>
+            <h3 class="main__tips--title">La evolución en Adalab</h3>
+            <p class="main__tips--text">
+                Durante los meses de formación en Adalab he realizado distintos tipos de proyectos, el primero que realicé por completo sola es la base de la web por la que te encuentras navegando, a la que he realizado diversas modificaciones de maquetación, así como he añadido funcionalidades tales como el menú hamburguesa mediante Java Script.
+            </p>
+            <p class="main__tips--text">
+                En el siguiente apartado encontrarás por orden de ejecución los ejercicios realizados en las evaluaciones intermedias y finales del curso de Adalab.
+            </p>
+            <p class="main__tips--text">
+                Mi intención es que sea una página completamente viva e ir añadiendo nuevos proyectos que ya están en marcha e incluso modificaciones de los que aquí te presento.
+            </p>
+        </section>
+        <ul id="list" class="main__projects--list">
+            <li class="project">
+                    <img class="project__img"src="./assets/images/project-adivina.jpg" alt="Adivina el número">
+                    <div class="project__text">
+                      <h4 class="project__text--title">Adivina el número</h4>
+                      <p class="project__text--text">Prueba tu agudeza intentando adivinar un número aleatorio generado entre 1 y 100.</p>
+                      <p class="project__text--text">Este ejercicio ha sido realizado principalmente con Java Script utilizando Visual Studio Code, al igual que en el resto de proyectos.</p>
+                      <p class="project__text--text"></p>
+                      <p class="project__text--text"></p>
+                      <p class="project__text--text"></p>
+                      <div class="project__text--links">
+                        <a href="https://iregonzalez.github.io/modulo-2-evaluacion-intermedia-IreGonzalez/" title="Web"><img class="project__text--links__unit"src="./assets/images/link-symbol.png" alt="link"></a>
+                        <a href="https://github.com/IreGonzalez/modulo-2-evaluacion-intermedia-IreGonzalez" title="Código"><img class="project__text--links__unit"src="./assets/images/code.png" alt=""></a>
                       </div>
                     </div>
-                  </article>
             </li>
-            <li>
-                <article class="main__projects--article">
-                    <img class="main__projects--article__img"src="./assets/images/project-r&m.jpg" alt="Web Rick & Morty">
-                    <div class="projects__text">
-                      <h4 class="main__projects--article__title">Buscador de Personajes</h4>
-                      <p class="main__projects--article__text">Se trata de la realización de un buscador de personajes de la serie de animación Rick and Morty</p>
-                      <div class="projects__links">
-                        <a href="https://iregonzalez.github.io/modulo-3-evaluacion-final-IreGonzalez/#/" title="Web"><img class="main__projects--article__link"src="./assets/images/link-symbol.png" alt="link"></a>
-                        <a href="https://github.com/IreGonzalez/modulo-3-evaluacion-final-IreGonzalez" title="Código"><img class="main__projects--article__link"src="./assets/images/code.png" alt=""></a>
+            <li class="project">
+                    <img class="project__img"src="./assets/images/project-series.jpg" alt="Web Series">
+                    <div class="project__text">
+                      <h4 class="project__text--title">Buscador de series</h4>
+                      <p class="project__text--text">Accede a la Web, realiza tu búsqueda y guarda tus series favoritas en la lista y si ya no te gusta, ¡borrala!</p>
+                      <p class="project__text--text">Para seguir practicando con Java Script nos lo complicaron un poquito más añadiendo el almacenamiento en el LocalStorage.</p>
+                      <p class="project__text--text"></p>
+                      <p class="project__text--text"></p>
+                      <p class="project__text--text"></p>
+                      <div class="project__text--links">
+                        <a href="https://iregonzalez.github.io/modulo-2-evaluacion-final-IreGonzalez/" title="Web"><img class="project__text--links__unit"src="./assets/images/link-symbol.png" alt="link"></a>
+                        <a href="https://github.com/IreGonzalez/modulo-2-evaluacion-final-IreGonzalez" title="Código"><img class="project__text--links__unit"src="./assets/images/code.png" alt=""></a>
                       </div>
                     </div>
-                  </article>
             </li>
-            <li>
-                <article class="main__projects--article">
-                    <img class="main__projects--article__img"src="./assets/images/project-clubs.jpg" alt="Mis clubs">
-                    <div class="projects__text">
-                      <h4 class="main__projects--article__title">Mis clubs</h4>
-                      <p class="main__projects--article__text">Web con la que organizar y filtrar tus clubs favoritos, este proyecto está pendiente de mejoras</p>
-                      <div class="projects__links">
-                        <a href="https://iregonzalez.github.io/modulo-3-evaluacion-intermedia-IreGonzalez/" title="Web"><img class="main__projects--article__link"src="./assets/images/link-symbol.png" alt="link"></a>
-                        <a href="https://github.com/IreGonzalez/modulo-3-evaluacion-intermedia-IreGonzalez" title="Código"><img class="main__projects--article__link"src="./assets/images/code.png" alt=""></a>
+            <li class="project">
+                    <img class="project__img"src="./assets/images/project-clubs.jpg" alt="Mis clubs">
+                    <div class="project__text">
+                      <h4 class="project__text--title">Mis clubs</h4>
+                      <p class="project__text--text">Web con la que organizar y filtrar tus clubs favoritos, Aunque aparentemente lo veas vacío, seguro que si consultas el código no te parece lo mismo.</p>
+                      <p class="project__text--text">Como comienzo en el uso de la biblioteca de Java Scrip, React, realizamos este proyecto donde la mayor dificultad estaba en reprogramar nuestro cerebro.</p>
+                      <p class="project__text--text"></p>
+                      <p class="project__text--text"></p>
+                      <p class="project__text--text"></p>
+                      <div class="project__text--links">
+                        <a href="https://iregonzalez.github.io/modulo-3-evaluacion-intermedia-IreGonzalez/" title="Web"><img class="project__text--links__unit"src="./assets/images/link-symbol.png" alt="link"></a>
+                        <a href="https://github.com/IreGonzalez/modulo-3-evaluacion-intermedia-IreGonzalez" title="Código"><img class="project__text--links__unit"src="./assets/images/code.png" alt=""></a>
                       </div>
                     </div>
-                  </article>
-            </li>
-            <li>
-                <article class="main__projects--article">
-                    <img class="main__projects--article__img"src="./assets/images/project-adivina.jpg" alt="Adivina el número">
-                    <div class="projects__text">
-                      <h4 class="main__projects--article__title">Adivina el número</h4>
-                      <p class="main__projects--article__text">Realizar un juego en el que se genere un número aleatorio y según el input del usuario genere una u otra respuesta</p>
-                      <div class="projects__links">
-                        <a href="https://iregonzalez.github.io/modulo-2-evaluacion-intermedia-IreGonzalez/" title="Web"><img class="main__projects--article__link"src="./assets/images/link-symbol.png" alt="link"></a>
-                        <a href="https://github.com/IreGonzalez/modulo-2-evaluacion-intermedia-IreGonzalez" title="Código"><img class="main__projects--article__link"src="./assets/images/code.png" alt=""></a>
-                      </div>
-                    </div>
-                  </article>
-            </li>
-        </ul>
-        <a class="main__link" href="./projects.html" title="Up"
-              ><img class="main__link--arrow" src="./assets/images/arrow-up.svg" alt="arrow"
-            /></a>
+        </li>
+        <li class="project">
+                <img class="project__img"src="./assets/images/project-r&m.jpg" alt="Web Rick & Morty">
+                <div class="project__text">
+                  <h4 class="project__text--title">Buscador de Personajes</h4>
+                  <p class="project__text--text">Si te gusta la serie echa un vistazo a los personajes que han surgido hasta ahora, filtralos como quieras y... ¡A por los siguientes!</p>
+                  <p class="project__text--text">En este ejercicio final las directrices únicamente solicitaban una petición a la Api y algún filtro, pero no pude conformarme viendo que había tantos personajes decidí realizar la paginación (aún no es perfecta, pronto seguiré trabajando en ella)</p>
+                  <p class="project__text--text">A la hora de realizar los filtros me encontré con el handicap de no conocer la serie así que me las averigué para que en cada paginación los filtros se modifican de manera automática facilitando en cada momento las opciones necesarias.</p>
+                  <p class="project__text--text"> Gracias a esto estoy buscando una nueva api a la que adaptar el diseño de la página, ya que creo que únicamente tendré que cambiar la maquetación para que sea más acorde con la nueva serie o película.</p>
+                  <p class="project__text--text"></p>
+                  <div class="project__text--links">
+                    <a href="https://iregonzalez.github.io/modulo-3-evaluacion-final-IreGonzalez/#/" title="Web"><img class="project__text--links__unit"src="./assets/images/link-symbol.png" alt="link"></a>
+                    <a href="https://github.com/IreGonzalez/modulo-3-evaluacion-final-IreGonzalez" title="Código"><img class="project__text--links__unit"src="./assets/images/code.png" alt=""></a>
+                  </div>
+                </div>
+        </li>
+    </ul>
+    <a class="main__link" href="./projects.html" title="Up"
+    ><img class="main__link--arrow" src="./assets/images/arrow-up.svg" alt="arrow"
+    /></a>
     </main>
     <footer class="footer">
       <nav class="footer__navigation">
