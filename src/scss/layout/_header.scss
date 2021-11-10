@@ -20,6 +20,10 @@
     height: 44px;
     width: 44px;
   }
+  &--remove{
+    height: 15px;
+    padding: 15px;
+  }
   &--list{
     position: fixed;
     top: 0px;
@@ -27,11 +31,16 @@
     background-color: $medium-grey;
   }
   &--elements{
-    margin-top: 50px;
     margin-left: 20px;
+    @include footer__navigation;
   }
   &--elem{
     padding: 5px;
+    @media (min-width: 1200px){
+    :hover{
+      color: $dark-grey;
+    }
+    }
   }
 }
 
