@@ -21,15 +21,16 @@
 <body>  
   <header class="header">
     <nav class="header__navigation">
-      <img 
-      class="header__navigation--link js_nav" 
-      src="./assets/images/ico-menu.svg"
-      alt="menu"
+      <div class="header__navigation--link js_nav" >
+        <img 
+          src="./assets/images/ico-menu.svg"
+          alt="menu"
       />
+      </div>
       <div class="hidden header__navigation--list js_navList">
         <img 
-      class="header__navigation--link js_navClose" 
-      src="./assets/images/remove-button.png"
+      class="header__navigation--remove js_navClose" 
+      src="./assets/images/remove-button.svg"
       alt="close"
       />
       <ul class="header__navigation--elements">
@@ -55,68 +56,67 @@
     </div>
   </header>
 
-    <main class="main">
-        <section class="form__instructions">
-            <p>
-              Si tienes cualquier consulta y prefieres un contacto directo a mi e-mail puedes rellenar el siguiente formulario
+    <main class="form">
+            <p class="form__instructions">
+              Si tienes cualquier consulta y prefieres un contacto directo a mi e-mail puedes rellenar el siguiente formulario.
             </p>
-            <p>
-              Todos los campos con <span class="asterisk">*</span> son
-              obligatorios.
-            </p>
-        </section>
-        <section id="form" class="form__section">
           <form 
-            class="form__short"
+            id="form" 
+            class="form__section"
             action="https://formspree.io/f/xayaggje"
             method="POST"
           >
               <label class="form__label" for="Name"
-                >Nombre completo <span class="asterisk">*</span>
-                <input
-                  class="form__input"
-                  placeholder="Escribe tu nombre..."
-                  type="text"
-                  id="Name"
-                  name="Name"
-                />
+                >Nombre *
               </label>
+              <input
+                class="form__input"
+                placeholder="Escribe tu nombre..."
+                type="text"
+                id="Name"
+                name="Name"
+              />
               <label class="form__label" for="emailAddress"
-                >E-mail <span class="asterisk">*</span>
-                <input
-                  class="form__input"
-                  placeholder="Escribe tu E-mail..."
-                  type="email"
-                  id="emailAddress"
-                  name="emailAddress"
-              /></label>
+                >
+                E-mail *
+              </label>
+              <input
+                class="form__input"
+                placeholder="Escribe tu E-mail..."
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+              />
               <label class="form__label"
               for="phone"
-                >Teléfono
-                <input
-                  class="form__input"
-                  placeholder="Ej:123456789"
-                  type="tel"
-                  id="phone"
-                  name="phone"
-              /></label>
-            <label class="form__label" for="comments"
-              >Mensaje <span class="asterisk">*</span>
+                >
+                Teléfono
+              </label>
               <input
-                class="form__fill"
-                placeholder="Escribe aquí tu consulta o comentario"
-                type="text"
-                id="comments"
-                name="comments"
-                size="15"
-                maxlength="100"
-            /></label>
+                class="form__input"
+                placeholder="Ej:123456789"
+                type="tel"
+                id="phone"
+                name="phone"
+              />
+            <label class="form__label" for="comments"
+              >
+              Mensaje *
+            </label>
+            <input
+              class="form__text"
+              placeholder="Escribe tu consulta"
+              type="text"
+              id="comments"
+              name="comments"
+              size="15"
+              maxlength="100"
+            />
             <input class="form__button" type="submit" value="Enviar" />
           </form>
-        </section>
-        <a class="main__link" href="./contact.html" title="Up"
-              ><img class="main__link--arrow" src="./assets/images/arrow-up.svg" alt="arrow"
-            /></a>
+          <p class="form__instructions">
+            Todos los campos con * son obligatorios.
+          </p>
       </main>
     <footer class="footer">
       <nav class="footer__navigation">
