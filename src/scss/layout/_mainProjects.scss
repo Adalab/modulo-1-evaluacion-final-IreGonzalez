@@ -1,29 +1,36 @@
 .main__projects{
-    &--article{
-      display: flex;
-      &__title{
-        @include main__title;
-        
-      }
-      &__text{
-        @include main__text;
-      }
-      &__img{
-        width: 150px;
-        height: 150px;
-        margin: 10px;
-      }
-      &__link{
+  &--descript{
+    margin: 20px;
+  }
+  &--list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: $light-purple;
+  }
+}
+
+.project{
+  &__img{
+    grid-column: span 1;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
+  &__text{
+    &--title{
+      grid-column: 2/5;
+      @include main__title;
+    }
+    &--text{
+  margin-left: 10px;
+      @include main__text;
+    }
+    &--links{
+      text-align: right;
+      &__unit{
         width: 18px;
         padding: 5px;
       }
     }
   }
-  .projects{
-    &__text{
-  margin-left: 10px;
-    }
-    &__links{
-      text-align: right;
-    }
-  }
+}
