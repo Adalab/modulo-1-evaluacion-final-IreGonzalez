@@ -91,7 +91,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   background-color: $light-purple;
   text-align: center;
-  width: 100%;
 
   &--title {
     @include main__title;

@@ -3,30 +3,31 @@
     margin: 20px;
   }
   &--list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: $light-purple;
   }
 }
 
 .project{
+  display: flex;
   &__img{
-    grid-column: span 1;
     width: 150px;
     height: 150px;
     margin: 10px;
   }
   &__text{
     &--title{
-      grid-column: 2/5;
       @include main__title;
+      margin: 15px;
     }
     &--text{
   margin-left: 10px;
-      @include main__text;
+      @include main__article;
+      font-family: 'Lato', sans-serif;
+      text-align: initial;
     }
     &--links{
       text-align: right;
+      margin-right: 20px;
       &__unit{
         width: 18px;
         padding: 5px;
