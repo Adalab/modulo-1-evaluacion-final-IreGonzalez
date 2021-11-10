@@ -6,6 +6,11 @@
     background-color: $light-purple;
     padding: 40px;
   }
+  &--title{
+    @include main__title;
+    text-align:center;
+    font-size: 36px;
+  }
 }
 
 .project{
