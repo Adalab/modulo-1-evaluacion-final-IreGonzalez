@@ -3,4 +3,4 @@ nav.addEventListener('click', handleMenu);
 navClose.addEventListener('click', handleMenu);
 
 //Form
-text.addEventListener('keyup', textCounter);
+text.addEventListener('keydown', textCounter);
