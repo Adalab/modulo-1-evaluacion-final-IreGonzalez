@@ -96,9 +96,11 @@
     @include main__title;
     grid-column: span 3;
     margin-top: 30px;
+    margin-bottom: 30px;
 
     @media (min-width: 1200px) {
       margin-top: 60px;
+      margin-bottom: 60px;
     }
   }
 
@@ -115,11 +117,11 @@
     &__title {
       font-family: 'Lato', sans-serif;
       font-weight: bold;
-      margin-top: 45px;
     }
 
     &__text {
       font-family: 'Lato', sans-serif;
+      margin: 10px 0 40px 0;
     }
   }
 

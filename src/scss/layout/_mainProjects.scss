@@ -41,12 +41,13 @@
       }
     }
     &--text{
-  margin-left: 10px;
-      @include main__article;
-      font-family: 'Lato', sans-serif;
-      text-align: initial;
-      @media (min-width: 1200px) {
-        font-size: 24px;
+      margin-left: 10px;
+      text-indent: 20px;
+        @include main__article;
+        font-family: 'Lato', sans-serif;
+        text-align: initial;
+        @media (min-width: 1200px) {
+          font-size: 24px;
       }
     }
     &--links{
